@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import CastInfo from "../components/CastInfo/CastInfo";
 import MainLayout from "../components/layouts/MainLayout";
 import FeaturedMedia from "../components/UI/FeaturedMedia/FeaturedMedia";

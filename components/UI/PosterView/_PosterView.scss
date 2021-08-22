@@ -21,12 +21,10 @@
   }
 
   &__thumbnail {
-    width: 240px;
-    height: 360px;
     position: relative;
     margin-right: 10px;
-    object-fit: cover;
-    object-position: center;
+    width: 240px;
+    height: 360px;
 
     img {
       width: 240px;

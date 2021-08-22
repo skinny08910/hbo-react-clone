@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Account = (props) => {
   const loopComp = (comp, digit) => {
     let thumbnails = [];
@@ -15,7 +17,7 @@ const Account = (props) => {
         <div className="account__watch-list">
           {loopComp(
             <div className="account__watch-video">
-              <img src="https://m.media-amazon.com/images/I/713K3DnSH0L._AC_SL1024_.jpg" />
+              <img src="https://c.shld.net/rpx/i/s/pi/mp/10160405/prod_9273366732?src=http%3A%2F%2Flyimage.club%2Fimages%2FimageC%2FALVB01HUGZ9G6.jpg&d=7f28b98f885bebaa7ec40fff3dcf191ffe53f6a0&" />
 
               <div className="account__watch-overlay">
                 <div className="account__watch-buttons">
@@ -37,9 +39,9 @@ const Account = (props) => {
       <div className="account__menu">
         <ul className="account__main">
           <li>
-            <a href="/" className="active">
-              My List
-            </a>
+            <Link href="/">
+              <a className="active">My List</a>
+            </Link>
           </li>
         </ul>
 
@@ -47,10 +49,14 @@ const Account = (props) => {
 
         <ul className="account__main">
           <li>
-            <a href="/">Account</a>
+            <Link href="/">
+              <a>Account</a>
+            </Link>
           </li>
           <li>
-            <a href="/">Sign Out</a>
+            <Link href="/">
+              <a>Sign Out</a>
+            </Link>
           </li>
         </ul>
       </div>

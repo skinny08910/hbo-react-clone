@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -7,7 +6,7 @@ export default function Home() {
       <div className="login-user">
         <div className="login-user__top">
           <div className="login-user__logo" />
-          <span className="login-user__title">Who's Is Watching?</span>
+          <span className="login-user__title">Who Is Watching?</span>
         </div>
 
         <div className="login-user__form">

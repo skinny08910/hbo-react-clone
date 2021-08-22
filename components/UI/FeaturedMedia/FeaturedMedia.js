@@ -6,9 +6,9 @@ const FeaturedMedia = (props) => {
         width="100%"
         height="100%"
         src="https://www.youtube.com/embed/NYH2sLid0Zc?mute=1&controls=0&autoplay=1&loop=1&start=16"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
 
       <div className="featured-media__bg">
