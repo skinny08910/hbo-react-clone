@@ -2,16 +2,15 @@ import Head from "next/head";
 import CastInfo from "../components/CastInfo/CastInfo";
 import MainLayout from "../components/layouts/MainLayout";
 import FeaturedMedia from "../components/UI/FeaturedMedia/FeaturedMedia";
-import ForYouList from "../components/UI/ForYouList/ForYouList";
-import JustAdded from "../components/UI/JustAdded/JustAdded";
-import PosterView from "../components/UI/PosterView/PosterView";
+import MediaRow from "../components/UI/MediaRow/MediaRow";
+import AuthCheck from "../components/AuthCheck";
 
 export default function HomeView() {
-  return (
+  return AuthCheck(
     <>
       <MainLayout>
         <FeaturedMedia />
-        <PosterView />
+        <MediaRow title="More like this" type="small-v" />
         <CastInfo />
       </MainLayout>
     </>
