@@ -54,6 +54,7 @@ export default function CreateUser() {
           <img
             className="create-user__user-img"
             src={globalState.defaultUserImg}
+            alt="Profile img"
           />
 
           <div className="create-user__input-group">

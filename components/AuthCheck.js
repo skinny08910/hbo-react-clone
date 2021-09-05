@@ -13,6 +13,9 @@ const AuthCheck = (component) => {
     // if (users.length >= 1) {
     //   router.push("/login");
     // }
+    let activeUID = ls("activeUID");
+    let users = ls("users") !== null ? ls("users") : [];
+
     if (activeUID === null && users.length < 1) {
       router.push("/create");
     }
