@@ -40,6 +40,7 @@ const Header = (props) => {
         <img
           className="top-header__user-img"
           src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=73a9df4b7bd1b330db1e903e08575ec1"
+          alt="Profile Img"
         />
         <div className="top-header__user-name">Bryant</div>
       </div>

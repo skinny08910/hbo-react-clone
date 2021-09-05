@@ -13,6 +13,8 @@ const Login = () => {
   let { hasMounted } = useMounted();
 
   useEffect(() => {
+    users;
+
     if (users < 1) {
       setLoadingUsers(false);
     }
