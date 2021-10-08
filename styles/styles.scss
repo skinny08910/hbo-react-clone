@@ -9,8 +9,13 @@
 @use '../components/UI/SearchModal/SearchModal';
 @use '../components/UI/Login/Login';
 @use '../components/UI/MediaRow/MediaRow';
+@use '../components/UI/GenreNav/genre-nav';
 
 html,
 body {
   background: black;
+}
+
+.hide-comp {
+  display: none;
 }
