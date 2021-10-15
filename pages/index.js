@@ -25,6 +25,8 @@ export default function Home() {
           location="In Theaters and on HBO MAX. Streaming throughout May 23."
           linkUrl="/movie/460465"
           type="front"
+          mediaType={"movie"}
+          mediaId={460465}
         />
         <LazyLoad
           offset={-400}

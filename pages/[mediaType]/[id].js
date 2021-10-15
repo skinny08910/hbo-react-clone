@@ -17,24 +17,6 @@ export default function SingleMediaPage(props) {
 
   console.log(props);
 
-  // useEffect(() => {
-  //   axios
-  //     .get(
-  //       `https://api.themoviedb.org/3/movie/${props.query.id}?&api_key=60251a68751bc8e49e5c42142c15ea73&language=en-US`
-  //     )
-  //     .then(function (response) {
-  //       // handle success
-  //       setMediaData(response.data);
-  //       console.log(response);
-  //     })
-  //     .catch(function (error) {
-  //       // handle error
-  //       console.log("Error Response For");
-
-  //       console.log(error);
-  //     });
-  // }, [mediaData]);
-
   return AuthCheck(
     <>
       <MainLayout>
@@ -48,6 +30,8 @@ export default function SingleMediaPage(props) {
           location="In Theaters and on HBO MAX. Streaming throughout May 23."
           linkUrl="/movies/id"
           type="single"
+          mediaType={props.query.mediaType}
+          mediaId={props.query.id}
         />
 
         <LazyLoad
@@ -82,7 +66,9 @@ export async function getServerSideProps(context) {
     mediaData = await axios.get(
       `https://api.themoviedb.org/3/${context.query.mediaType}/${context.query.id}?&api_key=60251a68751bc8e49e5c42142c15ea73&language=en-US`
     );
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 
   return {
     props: { mediaData: mediaData.data, query: context.query },
